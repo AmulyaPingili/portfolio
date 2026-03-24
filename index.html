@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sai Amulya Pingili | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&family=Architects+Daughter&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="grain"></div>
+  <div class="cursor" id="cur"></div>
+
+  <!-- ── SIDE DOODLES ── -->
+  <div class="side-doodles left">
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <circle cx="21" cy="17" r="10" stroke="#8C1D40" stroke-width="1.1" stroke-dasharray="2 1.3" />
+      <circle cx="17" cy="15" r="1.5" fill="#8C1D40" />
+      <circle cx="25" cy="15" r="1.5" fill="#8C1D40" />
+      <path d="M17 21 q4 4 8 0" stroke="#8C1D40" stroke-width="1.1" fill="none" stroke-linecap="round" />
+      <path d="M17 9 q1-3 2.5-1.5" stroke="#8C1D40" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M21 8 q0-3.5 1.5-2.5" stroke="#8C1D40" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M25 9 q1-3 2.5-1.5" stroke="#8C1D40" stroke-width="1" fill="none" stroke-linecap="round" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <path d="M21 38 Q8 26 11 12 Q21 4 31 12 Q34 26 21 38Z" stroke="#2d6a4f" stroke-width="1.1" fill="none"
+        stroke-dasharray="2 1.3" />
+      <line x1="21" y1="38" x2="21" y2="12" stroke="#2d6a4f" stroke-width=".8" stroke-dasharray="2 2" />
+      <path d="M21 26 Q14 20 13 15" stroke="#2d6a4f" stroke-width=".9" fill="none" />
+      <path d="M21 32 Q28 24 29 19" stroke="#2d6a4f" stroke-width=".9" fill="none" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <rect x="8" y="4" width="26" height="20" rx="2" stroke="#1a3a6b" stroke-width="1.1" fill="none"
+        stroke-dasharray="2 1.3" />
+      <rect x="14" y="24" width="14" height="4" rx="1" stroke="#1a3a6b" stroke-width="1" fill="none" />
+      <rect x="10" y="28" width="22" height="3" rx="1" stroke="#1a3a6b" stroke-width=".9" fill="none" />
+      <line x1="11" y1="10" x2="29" y2="10" stroke="#1a3a6b" stroke-width=".7" opacity=".5" />
+      <line x1="11" y1="14" x2="24" y2="14" stroke="#1a3a6b" stroke-width=".7" opacity=".4" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <path d="M9 21 Q18 10 29 21 Q18 32 9 21Z" stroke="#8C1D40" stroke-width="1.1" fill="none"
+        stroke-dasharray="2 1.3" />
+      <circle cx="25" cy="19" r="1.4" fill="#8C1D40" />
+      <path d="M7 16 Q4 21 7 26" stroke="#8C1D40" stroke-width="1" fill="none" stroke-linecap="round" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <circle cx="21" cy="21" r="4" stroke="#2d6a4f" stroke-width="1" fill="none" />
+      <circle cx="21" cy="10" r="4" stroke="#2d6a4f" stroke-width=".9" fill="none" opacity=".6" />
+      <circle cx="21" cy="32" r="4" stroke="#2d6a4f" stroke-width=".9" fill="none" opacity=".6" />
+      <circle cx="10" cy="21" r="4" stroke="#2d6a4f" stroke-width=".9" fill="none" opacity=".6" />
+      <circle cx="32" cy="21" r="4" stroke="#2d6a4f" stroke-width=".9" fill="none" opacity=".6" />
+    </svg>
+  </div>
+
+  <div class="side-doodles right">
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <path d="M7 38 L7 10" stroke="#2d6a4f" stroke-width="1.1" fill="none" stroke-linecap="round" />
+      <path d="M7 32 Q2 24 -2 22" stroke="#2d6a4f" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M7 24 Q14 16 18 13" stroke="#2d6a4f" stroke-width="1" fill="none" stroke-linecap="round" />
+      <circle cx="-2" cy="22" r="2.5" stroke="#2d6a4f" stroke-width=".9" fill="none" />
+      <circle cx="18" cy="13" r="2.5" stroke="#2d6a4f" stroke-width=".9" fill="none" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <path d="M21 6 l2.5 9 l9 2.5 l-9 2.5 l-2.5 9 l-2.5-9 l-9-2.5 l9-2.5z" stroke="#1a3a6b" stroke-width="1.1"
+        fill="none" />
+      <path d="M8 28 l1.5 5 l5 1.5 l-5 1.5 l-1.5 5 l-1.5-5 l-5-1.5 l5-1.5z" stroke="#1a3a6b" stroke-width=".9"
+        fill="none" opacity=".5" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <circle cx="21" cy="19" r="11" stroke="#8C1D40" stroke-width="1.1" stroke-dasharray="2 1.3" />
+      <circle cx="13" cy="14" r="5" stroke="#8C1D40" stroke-width="1" fill="none" />
+      <circle cx="29" cy="14" r="5" stroke="#8C1D40" stroke-width="1" fill="none" />
+      <circle cx="17" cy="17" r="1.6" fill="#8C1D40" />
+      <circle cx="25" cy="17" r="1.6" fill="#8C1D40" />
+      <ellipse cx="21" cy="23" rx="3.5" ry="2.5" stroke="#8C1D40" stroke-width="1" fill="none" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <path d="M21 21 Q26 17 26 21 Q26 27 20 27 Q14 27 14 19 Q14 11 22 11 Q30 11 30 22 Q30 34 18 34" stroke="#8C1D40"
+        stroke-width="1.1" fill="none" stroke-linecap="round" />
+    </svg>
+    <svg class="dd" viewBox="0 0 42 42" fill="none">
+      <path d="M7 35 L7 14 Q7 8 13 8 L29 8 Q35 8 35 14 L35 28 Q35 34 29 34 L13 34 Q7 34 7 28Z" stroke="#1a3a6b"
+        stroke-width="1.1" fill="none" stroke-dasharray="2 1.3" />
+      <path d="M13 8 L13 2" stroke="#1a3a6b" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M29 8 L29 2" stroke="#1a3a6b" stroke-width="1" fill="none" stroke-linecap="round" />
+      <line x1="12" y1="18" x2="30" y2="18" stroke="#1a3a6b" stroke-width=".8" opacity=".5" />
+      <line x1="12" y1="23" x2="30" y2="23" stroke="#1a3a6b" stroke-width=".8" opacity=".4" />
+      <line x1="12" y1="28" x2="22" y2="28" stroke="#1a3a6b" stroke-width=".8" opacity=".4" />
+    </svg>
+  </div>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">about</a>
+      <a href="#edu" class="nav-link">edu</a>
+      <a href="#exp" class="nav-link">work</a>
+      <a href="#projects" class="nav-link">projects</a>
+      <a href="#contact" class="nav-link">connect</a>
+    </div>
+  </nav>
+
+  <!-- ══ PAGE ══ -->
+  <div class="page">
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="about">
+      <div class="notebook-card">
+
+        <!-- LEFT: cream notebook -->
+        <div class="nb-left">
+          <div class="nb-illustration">
+            <img src="portfolio_pic.jpg" alt="Sai Amulya Pingili">
+          </div>
+          <div class="nb-name">Sai Amulya Pingili</div>
+          <div class="nb-role">AI Data Scientist</div>
+          <div class="nb-headline">AI can write the code but <br>we still need someone to communicate <em>business to it
+              and understand business.</em></div>
+          <div class="nb-tagline">Tempe, Arizona &nbsp;·&nbsp; open to opportunities</div>
+        </div>
+
+        <!-- RIGHT: terminal dark panel -->
+        <div class="nb-right">
+          <div>
+            <div class="term-label">profile.json</div>
+            <div class="term-block">
+              <span class="t-cmnt">// Sai Amulya Pingili</span>
+              {
+              <span class="t-key">"role"</span>: <span class="t-str">"AI Data Scientist"</span>,
+              <span class="t-key">"school"</span>: <span class="t-str">"Arizona State University"</span>,
+              <span class="t-key">"degree"</span>: <span class="t-str">"Master's in Data Science"</span>,
+              <span class="t-key">"grad"</span>: <span class="t-num">2026</span>,
+              <span class="t-key">"gpa"</span>: <span class="t-num">3.9</span>,
+              <span class="t-key">"open_to"</span>: <span class="t-str">"full-time roles"</span>
+              }
+            </div>
+          </div>
+
+          <div>
+            <div class="term-label">impact</div>
+            <div class="stat-row">
+              <div class="stat-pill">
+                <span class="sp-num">40+</span>
+                <span class="sp-lbl">LLMs benchmarked</span>
+              </div>
+              <div class="stat-pill">
+                <span class="sp-num">60%</span>
+                <span class="sp-lbl">reporting time saved</span>
+              </div>
+              <div class="stat-pill">
+                <span class="sp-num">2M+</span>
+                <span class="sp-lbl">records processed</span>
+              </div>
+              <div class="stat-pill">
+                <span class="sp-num">+28%</span>
+                <span class="sp-lbl">RAG relevance gain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-btns">
+            <a href="https://linkedin.com/in/amulyapingili/" target="_blank" class="btn btn-ghost">LinkedIn</a>
+            <a href="AmulyaPingili_Resume.pdf" target="_blank" class="btn btn-ghost"
+              style="border-style:dashed">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section class="section" id="edu">
+      <div class="sec-header">
+        <span class="sec-num">02 / academic log</span>
+        <div class="sec-title">Education</div>
+        <svg class="squig" viewBox="0 0 180 9" fill="none">
+          <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0" stroke="#8C1D40" stroke-width="1.7"
+            fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="exp-list">
+        <div class="exp-card">
+          <div class="tape"></div>
+          <div class="exp-top">
+            <div class="exp-co">Arizona State University</div>
+            <span class="exp-period">2024 – 2026</span>
+          </div>
+          <div class="exp-role">Master's in Data Science · GPA: 3.9</div>
+          <ul class="exp-bullets">
+            <li>Coursework: Community Analytics, Distributed Data Systems, Big Data Analytics</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="tape"></div>
+          <div class="exp-top">
+            <div class="exp-co">ACE Engineering College, Hyd India</div>
+            <span class="exp-period">Graduated</span>
+          </div>
+          <div class="exp-role">Bachelor's in Computer Science · Data Science Concentration</div>
+          <ul class="exp-bullets">
+            <li>Coursework: Machine Learning, Data Visualization, DSA, Computer Networks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="section" id="exp">
+      <div class="sec-header">
+        <span class="sec-num">03 / professional log</span>
+        <div class="sec-title">Experience</div>
+        <svg class="squig" viewBox="0 0 180 9" fill="none">
+          <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0" stroke="#8C1D40" stroke-width="1.7"
+            fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="exp-list">
+        <div class="exp-card">
+          <div class="tape"></div>
+          <div class="exp-top">
+            <div class="exp-co">ASU Enterprise Technology</div>
+            <span class="exp-period">Jun 2025 – Present</span>
+          </div>
+          <div class="exp-role">AI Data Science Intern · Scottsdale, AZ</div>
+          <p class="exp-learn">"Focused on making LLM outputs versioned, ethical, and production-ready."</p>
+          <ul class="exp-bullets">
+            <li>Evaluated ethical benchmarks across 40+ LLMs with a repeatable versioning workflow.</li>
+            <li>Built LLM topic modeling for ASU Experience Centre to identify and flag hidden student concerns.</li>
+            <li>Automated Python pipeline cut manual reporting time by 60%.</li>
+            <li>Annotated 200+ Mastercard Foundation docs for fine-tuning & knowledge base dev.</li>
+            <li>Designing a Text to SQL Agentic Workflow for self-service analytics.</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">LLMs</span><span class="chip">Topic Modeling</span><span class="chip">Python</span>
+            <span class="chip">NL2SQL</span><span class="chip">Hugging Face</span><span class="chip">ETL</span>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="tape" style="transform:translateX(-50%) rotate(-1.5deg)"></div>
+          <div class="exp-top">
+            <div class="exp-co">Excelerate</div>
+            <span class="exp-period">Jul – Aug 2023</span>
+          </div>
+          <div class="exp-role">Data Visualization Intern · Remote, India</div>
+          <p class="exp-learn">"Learned that business impact lives in the data narrative, not just the raw numbers."</p>
+          <ul class="exp-bullets">
+            <li>Analyzed 10 Facebook ad campaigns via Python & Tableau.</li>
+            <li>Identified 20% underperforming campaigns through cost/engagement diagnosis.</li>
+            <li>Recommended budget reallocation strategy to improve campaign ROI.</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">Tableau</span><span class="chip">Python</span>
+            <span class="chip">Pandas</span><span class="chip">KPI Analysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="section" id="projects">
+      <div class="sec-header">
+        <span class="sec-num">04 / code artifacts</span>
+        <div class="sec-title">Projects</div>
+        <svg class="squig" viewBox="0 0 180 9" fill="none">
+          <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0" stroke="#1a3a6b" stroke-width="1.7"
+            fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="proj-scatter">
+
+        <div class="proj-card">
+          <div class="proj-img">
+            <img src="traffic_analytics_dashboard.png" alt="NLQ Traffic Analytics Dashboard">
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">NLQ Traffic Analytics Dashboard</div>
+            <p class="proj-desc">A Vector-enabled Airflow pipeline transforming NYC Open Data into a searchable
+              knowledge base with Semantic Natural Language support.</p>
+            <div class="proj-metric">2M+ records validated using Apache Airflow and stored in S3</div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Sep–Dec 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img">
+            <img src="rag_chatbot_thumbnail.jpg" alt="RAG Movie Recommender Chatbot">
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">RAG Movie Recommender Chatbot</div>
+            <p class="proj-desc">Built an end-to-end Semantic Search & RAG engine that leverages ChromaDB and Gemini 1.5
+              Flash to provide instant, AI-generated movie recommendations from a library of 6,000+ titles.</p>
+            <div class="proj-metric"> +28% relevance gain</div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Mar–May 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img">
+            <img src="exoplanet_thumbnail.png" alt="Predicting Alien Worlds">
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">Predicting Alien Worlds</div>
+            <p class="proj-desc">Exoplanet habitability predictor using NASA's HZ equations + Scikit-Learn across
+              from TESS, Kepler, and K2 missions.</p>
+
+            <div class="proj-metric">
+              <a href="https://predictingalienworlds-ap24.streamlit.app/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                🚀 Live on Streamlit Cloud
+              </a>
+            </div>
+
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Aug 2023 – Jun 2024</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="section">
+      <div class="sec-header">
+        <span class="sec-num">05 / toolkit</span>
+        <div class="sec-title">Skills & Tools</div>
+        <svg class="squig" viewBox="0 0 180 9" fill="none">
+          <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0" stroke="#2d6a4f" stroke-width="1.7"
+            fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="skills-grid">
+        <div class="sg"><span class="sg-head">Languages</span>
+          <div class="pills"><span class="pill">Python</span><span class="pill">R</span><span
+              class="pill">C++</span><span class="pill">Java</span></div>
+        </div>
+        <div class="sg"><span class="sg-head">Databases</span>
+          <div class="pills"><span class="pill">PostgreSQL</span><span class="pill">MongoDB</span><span
+              class="pill">MySQL</span><span class="pill">Redshift</span></div>
+        </div>
+        <div class="sg"><span class="sg-head">ML / AI</span>
+          <div class="pills"><span class="pill">Hugging Face</span><span class="pill">SentenceTransformers</span><span
+              class="pill">ChromaDB</span><span class="pill">Scikit-Learn</span></div>
+        </div>
+        <div class="sg"><span class="sg-head">Pipelines</span>
+          <div class="pills"><span class="pill">Apache Airflow</span><span class="pill">Pandas</span><span
+              class="pill">Matplotlib</span></div>
+        </div>
+        <div class="sg"><span class="sg-head">Cloud & BI</span>
+          <div class="pills"><span class="pill">AWS S3/EC2</span><span class="pill">Power BI</span><span
+              class="pill">Tableau</span></div>
+        </div>
+        <div class="sg"><span class="sg-head">Certifications</span>
+          <div class="pills"><span class="pill">DP-900 Azure</span><span class="pill">HackerRank</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT POSTCARD ── -->
+    <div class="contact-wrap" id="contact">
+      <div class="sec-header" style="text-align:center">
+        <span class="sec-num">06 / connect</span>
+        <div class="sec-title">Say hello.</div>
+      </div>
+      <div class="postcard">
+        <div class="pc-left">
+          <div class="pc-title">Let's build meaningful.</div>
+          <div class="pc-sub">open to full-time & internship roles</div>
+          <div class="pc-links">
+            <a href="mailto:saiamulyapingili@gmail.com" class="pc-link">
+              <i class="fas fa-envelope"></i> saiamulyapingili@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/amulyapingili/" target="_blank" class="pc-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/amulyapingili" target="_blank" class="pc-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="AmulyaPingili_Resume.pdf" target="_blank" class="pc-link">
+              <i class="fas fa-file-pdf"></i> Resume PDF
+            </a>
+          </div>
+        </div>
+        <div class="pc-divider"></div>
+        <div class="pc-right">
+          <div class="pc-stamp">
+            <div class="pc-stamp-inner">✦</div>
+            <div class="pc-stamp-lbl">2026</div>
+          </div>
+          <div class="pc-address">
+            Sai Amulya Pingili<br>
+            Tempe, Arizona<br>
+            M.S. Data Science
+          </div>
+          <div class="pc-postmark">OPEN TO OPPORTUNITIES · 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-sig">Thanks for Visiting</div>
+    </footer>
+
+  </div><!-- /page -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
