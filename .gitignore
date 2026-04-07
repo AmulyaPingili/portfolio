@@ -6,5 +6,4 @@ antigravity/
 brain/
 tmp/
 *.pdf
-# Keep resume pdf if the user wants it on the site, but usually we exclude temp assets.
-# The user's resume is AmulyaPingili_Resume.pdf, I will keep it included.
+!AmulyaPingili_Resume.pdf

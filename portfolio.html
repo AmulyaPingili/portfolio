@@ -638,10 +638,12 @@ footer {
       <!-- LEFT: cream notebook -->
       <div class="nb-left">
         <!-- swap src for your actual illustration file -->
-        <div class="nb-illustration-ph">[ your illustration.jpg goes here ]</div>
+        <div class="nb-illustration">
+          <img src="portfolio_pic.jpg" alt="Sai Amulya Pingili">
+        </div>
         <div class="nb-name">Sai Amulya Pingili</div>
         <div class="nb-role">AI Data Scientist &nbsp;·&nbsp; ASU MSDS '26</div>
-        <div class="nb-headline">Data should<br>feel <em>natural.</em></div>
+        <div class="nb-headline">Data should<br>feel <em>meaningful.</em></div>
         <div class="nb-tagline">Tempe, Arizona &nbsp;·&nbsp; open to opportunities</div>
         <div style="font-family:var(--sans);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">3 things I believe in</div>
         <div class="stickies">
@@ -694,7 +696,9 @@ footer {
         <div class="hero-btns">
           <a href="mailto:saiamulyapingili@gmail.com" class="btn btn-primary">get in touch →</a>
           <a href="https://linkedin.com/in/amulyapingili/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
-          <a href="#" class="btn btn-ghost" style="opacity:.4;border-style:dashed">[ Resume PDF ]</a>
+          <a href="AmulyaPingili_Resume.pdf" target="_blank" class="btn btn-ghost">
+            <i class="fas fa-file-pdf"></i> Resume
+          </a>
         </div>
       </div>
     </div>
@@ -792,7 +796,9 @@ footer {
     <div class="proj-scatter">
 
       <div class="proj-card">
-        <div class="proj-img">[ NLQ Dashboard screenshot ]</div>
+        <div class="proj-img">
+          <img src="traffic_analytics_dashboard.png" alt="NLQ Traffic Analytics Dashboard" style="width:100%; height:100%; object-fit:cover;">
+        </div>
         <div class="proj-body">
           <span class="proj-tag">#Airflow #MongoDB #VectorSearch</span>
           <div class="proj-title">NLQ Traffic Analytics Dashboard</div>
@@ -805,7 +811,9 @@ footer {
       </div>
 
       <div class="proj-card">
-        <div class="proj-img">[ RAG Chatbot screenshot ]</div>
+        <div class="proj-img">
+          <img src="rag_chatbot_thumbnail.jpg" alt="RAG Movie Recommender Chatbot" style="width:100%; height:100%; object-fit:cover;">
+        </div>
         <div class="proj-body">
           <span class="proj-tag">#RAG #ChromaDB #Gemini</span>
           <div class="proj-title">RAG Movie Recommender Chatbot</div>
@@ -818,7 +826,9 @@ footer {
       </div>
 
       <div class="proj-card">
-        <div class="proj-img">[ Exoplanet Simulator screenshot ]</div>
+        <div class="proj-img">
+          <img src="exoplanet_thumbnail.png" alt="Predicting Alien Worlds" style="width:100%; height:100%; object-fit:cover;">
+        </div>
         <div class="proj-body">
           <span class="proj-tag">#NASA #ScikitLearn #Streamlit</span>
           <div class="proj-title">Predicting Alien Worlds</div>
@@ -853,6 +863,24 @@ footer {
     </div>
   </section>
 
+  <!-- ── RESUME VIEWER ── -->
+  <section class="section" id="resume">
+    <div class="sec-header">
+      <span class="sec-num">04.1 / document preview</span>
+      <div class="sec-title">Resume PDF</div>
+      <svg class="squig" viewBox="0 0 180 9" fill="none">
+        <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0"
+          stroke="#8C1D40" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="notebook-card" style="padding: 20px; background: white; border: 1px solid rgba(0,0,0,0.1); margin-top: 20px;">
+      <embed src="AmulyaPingili_Resume.pdf" type="application/pdf" width="100%" height="800px" />
+      <div style="text-align: center; margin-top: 20px; font-family: var(--hand); font-size: 1.2rem;">
+        <a href="AmulyaPingili_Resume.pdf" target="_blank" class="btn btn-primary">Open Full Resume ↗</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ── CONTACT POSTCARD ── -->
   <div class="contact-wrap" id="contact">
     <div class="sec-header" style="text-align:center">
@@ -866,8 +894,12 @@ footer {
         <div class="pc-links">
           <a href="mailto:saiamulyapingili@gmail.com" class="pc-link">✉ saiamulyapingili@gmail.com</a>
           <a href="https://linkedin.com/in/amulyapingili/" target="_blank" class="pc-link">in LinkedIn ↗</a>
-          <a href="#" class="pc-link" style="opacity:.4;border-style:dashed;color:#aaa">[ GitHub ]</a>
-          <a href="#" class="pc-link" style="opacity:.4;border-style:dashed;color:#aaa">[ Resume PDF ]</a>
+          <a href="https://github.com/amulyapingili" target="_blank" class="pc-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="AmulyaPingili_Resume.pdf" target="_blank" class="pc-link">
+            <i class="fas fa-file-pdf"></i> Resume
+          </a>
         </div>
       </div>
       <div class="pc-divider"></div>
