@@ -56,24 +56,10 @@ body.loaded { opacity: 1; }
 
 .grain {
   position: fixed; inset: 0;
-  background: url("https://www.transparenttextures.com/patterns/p6.png");
+  background: url("grain.png");
   opacity: 0.15; pointer-events: none; z-index: 1000;
 }
 
-/* ── CURSOR ── */
-.cursor {
-  width: 24px; height: 24px;
-  background: var(--maroon);
-  border-radius: 50%;
-  position: fixed; pointer-events: none;
-  z-index: 9999; 
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease-out, width 0.2s, height 0.2s;
-  mix-blend-mode: difference;
-}
-.cursor.big {
-  width: 48px; height: 48px;
-}
 
 /* ── DOODLES ── */
 .side-doodles {
@@ -107,7 +93,7 @@ body.light-mode .nav-link:hover { color: var(--maroon); }
 
 .theme-btn {
   background: none; border: none; color: var(--gold);
-  cursor: pointer; font-size: 1.4rem; padding: 8px;
+  font-size: 1.4rem; padding: 8px;
   transition: transform 0.3s;
 }
 .theme-btn:hover { transform: rotate(15deg) scale(1.1); }
@@ -201,6 +187,12 @@ body.light-mode .nav-link:hover { color: var(--maroon); }
 .t-str { color: #a5d6ff; }
 .t-num { color: #d19a66; }
 .t-cmnt { color: #6a9955; opacity: 0.7; }
+.t-cursor {
+  display: inline-block; color: var(--gold);
+  animation: blink 0.75s step-end infinite;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+#profile-json div { line-height: 1.8; }
 
 .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .stat-pill {
@@ -269,6 +261,8 @@ body.light-mode .sec-title { color: var(--maroon); }
 .proj-card:hover { transform: translateY(-10px); }
 .proj-img { width: 100%; height: 200px; }
 .proj-img img { width: 100%; height: 100%; object-fit: cover; }
+.proj-ph { display: flex; align-items: center; justify-content: center; }
+.ph-label { font-family: var(--serif); font-size: 2.2rem; font-weight: 700; color: rgba(255,255,255,.22); letter-spacing: .12em; }
 .proj-body { padding: 24px; }
 .proj-tag { font-family: var(--serif); font-size: .9rem; color: var(--maroon); font-weight: 700; margin-bottom: 8px; display: block; }
 .proj-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
@@ -282,6 +276,14 @@ body.light-mode .sg { background: var(--surface); box-shadow: 0 4px 12px rgba(0,
 .sg-head { font-family: var(--serif); color: var(--gold); display: block; margin-bottom: 16px; font-size: 1.1rem; font-weight: 700; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; }
 .pill { background: var(--pill-bg); color: var(--text-main); padding: 6px 14px; border-radius: 4px; font-size: .9rem; border: 1px solid var(--grid); }
+
+/* ── CERTIFICATIONS ── */
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.cert-card { background: var(--surface); color: var(--ink); border-radius: 8px; padding: 18px 20px; box-shadow: 0 4px 16px rgba(0,0,0,.08); border-left: 3px solid var(--maroon); }
+body.light-mode .cert-card { box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+.cert-name { font-weight: 600; font-size: .95rem; margin-bottom: 4px; }
+.cert-issuer { font-size: .85rem; color: var(--muted); }
+.cert-expired { font-size: .75rem; color: var(--maroon); font-weight: 500; margin-top: 6px; }
 
 /* ── CONTACT POSTCARD ── */
 .postcard {

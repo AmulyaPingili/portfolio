@@ -10,13 +10,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&family=Architects+Daughter&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="index.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8JYTPPT6R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B8JYTPPT6R');
+  </script>
 </head>
 
 <body>
   <div class="grain"></div>
-  <div class="cursor" id="cur"></div>
 
   <!-- ── SIDE DOODLES ── -->
   <div class="side-doodles left">
@@ -103,6 +109,7 @@
       <a href="#edu" class="nav-link">edu</a>
       <a href="#exp" class="nav-link">work</a>
       <a href="#projects" class="nav-link">projects</a>
+      <a href="#certs" class="nav-link">certifications</a>
       <a href="#contact" class="nav-link">connect</a>
       <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
         <i class="fas fa-moon"></i>
@@ -127,24 +134,14 @@
           <div class="nb-headline">AI can write the code, but <br>we still need someone to communicate <em>business
               needs to it
               and understand the business.</em></div>
-          <div class="nb-tagline">Tempe, Arizona &nbsp;·&nbsp; open to opportunities</div>
+          <div class="nb-tagline">United States &nbsp;·&nbsp; open to full-time roles</div>
         </div>
 
         <!-- RIGHT: terminal dark panel -->
         <div class="nb-right">
           <div>
             <div class="term-label">profile.json</div>
-            <div class="term-block">
-              <span class="t-cmnt">// Sai Amulya Pingili</span>
-              {
-              <span class="t-key">"role"</span>: <span class="t-str">"AI Data Scientist"</span>,
-              <span class="t-key">"school"</span>: <span class="t-str">"Arizona State University"</span>,
-              <span class="t-key">"degree"</span>: <span class="t-str">"Master's in Data Science"</span>,
-              <span class="t-key">"grad"</span>: <span class="t-num">2026</span>,
-              <span class="t-key">"gpa"</span>: <span class="t-num">3.9</span>,
-              <span class="t-key">"open_to"</span>: <span class="t-str">"full-time roles"</span>
-              }
-            </div>
+            <div class="term-block" id="profile-json"></div>
           </div>
 
           <div>
@@ -152,7 +149,7 @@
             <div class="stat-row">
               <div class="stat-pill">
                 <span class="sp-num">40+</span>
-                <span class="sp-lbl">LLMs benchmarked</span>
+                <span class="sp-lbl">AI models evaluated</span>
               </div>
               <div class="stat-pill">
                 <span class="sp-num">60%</span>
@@ -164,16 +161,13 @@
               </div>
               <div class="stat-pill">
                 <span class="sp-num">+28%</span>
-                <span class="sp-lbl">RAG relevance gain</span>
+                <span class="sp-lbl">search accuracy improvement</span>
               </div>
             </div>
           </div>
 
           <div class="hero-btns">
-            <a href="https://linkedin.com/in/amulyapingili/" target="_blank" class="btn btn-ghost">LinkedIn</a>
-            <a href="AmulyaPingili_Resume.pdf" target="_blank" class="btn btn-ghost">
-              <i class="fas fa-file-pdf"></i> Resume
-            </a>
+            <a href="https://linkedin.com/in/amulyapingili/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -196,7 +190,7 @@
             <div class="exp-co">Arizona State University</div>
             <span class="exp-period">2024 – 2026</span>
           </div>
-          <div class="exp-role">Master's in Data Science · GPA: 3.9</div>
+          <div class="exp-role">M.S. Data Science, Analytics &amp; Engineering · GPA: 3.97</div>
           <ul class="exp-bullets">
             <li>Coursework: Community Analytics, Distributed Data Systems, Big Data Analytics</li>
           </ul>
@@ -231,20 +225,20 @@
           <div class="tape"></div>
           <div class="exp-top">
             <div class="exp-co">ASU Enterprise Technology</div>
-            <span class="exp-period">Jun 2025 – Present</span>
+            <span class="exp-period">Jun 2025 – May 2026</span>
           </div>
           <div class="exp-role">AI Data Science Intern · Scottsdale, AZ</div>
-          <p class="exp-learn">"Focused on making LLM outputs versioned, ethical, and production-ready."</p>
+          <p class="exp-learn">"Focused on making AI outputs ethical, measurable, and ready for real use."</p>
           <ul class="exp-bullets">
-            <li>Evaluated ethical benchmarks across 40+ LLMs with a repeatable versioning workflow.</li>
-            <li>Built LLM topic modeling for ASU Experience Centre to identify and flag hidden student concerns.</li>
-            <li>Automated Python pipeline cut manual reporting time by 60%.</li>
-            <li>Annotated 200+ Mastercard Foundation docs for fine-tuning & knowledge base dev.</li>
-            <li>Designing a Text to SQL Agentic Workflow for self-service analytics.</li>
+            <li>Built an ETL pipeline (Python, SageMaker, Redshift) ingesting Ethical AI evaluation JSON into structured tables, enabling metric tracking across 40+ model configurations.</li>
+            <li>Designed and evaluated a 2-agent Text-to-SQL system across 39 benchmark queries; identified token limits and chunk retrieval as primary failure modes (avg 36.8/100), driving architectural redesign of the data dictionary.</li>
+            <li>Automated LLM-generated report storage via Google Drive API, eliminating manual file handling and reducing reporting effort by 60%.</li>
+            <li>Built a Slack API bot that auto-classifies feature requests vs. bugs, with volume-threshold escalation to the engineering team.</li>
+            <li>Self-initiated a PyPDF audit of 200+ Mastercard Foundation documents to surface metadata tagging errors; recognized with the ASU Sun Award by the Director of Enterprise Planning.</li>
           </ul>
           <div class="chip-row">
-            <span class="chip">LLMs</span><span class="chip">Topic Modeling</span><span class="chip">Python</span>
-            <span class="chip">NL2SQL</span><span class="chip">Hugging Face</span><span class="chip">ETL</span>
+            <span class="chip">Python</span><span class="chip">SageMaker</span><span class="chip">Redshift</span>
+            <span class="chip">Text-to-SQL</span><span class="chip">Agentic AI</span><span class="chip">RAG</span><span class="chip">Slack API</span><span class="chip">ETL</span>
           </div>
         </div>
 
@@ -272,7 +266,7 @@
     <!-- ── PROJECTS ── -->
     <section class="section" id="projects">
       <div class="sec-header">
-        <span class="sec-num">04 / code artifacts</span>
+        <span class="sec-num">04 / work samples</span>
         <div class="sec-title">Projects</div>
         <svg class="squig" viewBox="0 0 180 9" fill="none">
           <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0" stroke="#1a3a6b" stroke-width="1.7"
@@ -286,10 +280,9 @@
             <img src="traffic_analytics_dashboard.png" alt="NLQ Traffic Analytics Dashboard">
           </div>
           <div class="proj-body">
-            <div class="proj-title">NLQ Traffic Analytics Dashboard</div>
-            <p class="proj-desc">A Vector-enabled Airflow pipeline transforming NYC Open Data into a searchable
-              knowledge base with Semantic Natural Language support.</p>
-            <div class="proj-metric">2M+ records validated using Apache Airflow and stored in S3</div>
+            <div class="proj-title">City Traffic Analytics Dashboard</div>
+            <p class="proj-desc">A distributed system that ingests real-time NYC crash data and lets users ask plain-English questions like "Where were the most severe collisions in Manhattan last hour?" — and get instant, map-based answers.</p>
+            <div class="proj-metric">2M+ crash records processed · 0% failure rate under load testing</div>
             <div class="chip-row" style="margin-top:8px">
               <span class="chip">Sep–Dec 2025</span>
             </div>
@@ -301,10 +294,9 @@
             <img src="rag_chatbot_thumbnail.jpg" alt="RAG Movie Recommender Chatbot">
           </div>
           <div class="proj-body">
-            <div class="proj-title">RAG Movie Recommender Chatbot</div>
-            <p class="proj-desc">Built an end-to-end Semantic Search & RAG engine that leverages ChromaDB and Gemini 1.5
-              Flash to provide instant, AI-generated movie recommendations from a library of 6,000+ titles.</p>
-            <div class="proj-metric"> +28% relevance gain</div>
+            <div class="proj-title">AI Movie Recommender Chatbot</div>
+            <p class="proj-desc">A conversational AI that recommends movies based on what you actually mean, not just keywords. Searches a library of 6,000+ titles by understanding the meaning behind your request.</p>
+            <div class="proj-metric">+28% more relevant results compared to keyword search</div>
             <div class="chip-row" style="margin-top:8px">
               <span class="chip">Mar–May 2025</span>
             </div>
@@ -317,11 +309,10 @@
           </div>
           <div class="proj-body">
             <div class="proj-title">Predicting Alien Worlds</div>
-            <p class="proj-desc">Exoplanet habitability predictor using NASA's HZ equations + Scikit-Learn across
-              from TESS, Kepler, and K2 missions.</p>
+            <p class="proj-desc">A machine learning model trained on NASA data that predicts whether a planet outside our solar system could support life, based on distance from its star, size, and atmospheric conditions.</p>
 
             <div class="proj-metric">
-              <a href="https://predictingalienworlds-ap24.streamlit.app/" target="_blank"
+              <a href="https://predictingalienworlds-ap24.streamlit.app/" target="_blank" rel="noopener noreferrer"
                 style="text-decoration: none; color: inherit;">
                 🚀 Live on Streamlit Cloud
               </a>
@@ -332,6 +323,92 @@
             </div>
           </div>
         </div>
+
+        <div class="proj-card">
+          <div class="proj-img proj-ph" style="background:linear-gradient(135deg,#1a3a6b,#2d6a4f);">
+            <span class="ph-label">BC</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">Breathe California</div>
+            <p class="proj-desc">A live air quality forecast system covering all 43 California counties. Predicts pollution levels hour by hour so residents, researchers, and policymakers can stay ahead of unhealthy air.</p>
+            <div class="proj-metric"><a href="https://breathe-california.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">Live at breathe-california.vercel.app</a></div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Aug 2025 – May 2026</span><span class="chip">Masters Capstone</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img proj-ph" style="background:linear-gradient(135deg,#8C1D40,#1a3a6b);">
+            <span class="ph-label">POP</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">POP: Workflow Optimizer</div>
+            <p class="proj-desc">A silent background app that tracks which tools you switch between at work, finds where time is wasted, and guides you through fixes using AI suggestions and voice prompts. No screenshots, no microphone.</p>
+            <div class="proj-metric"><a href="https://github.com/bhawan-kumar/Pop" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">View on GitHub</a></div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Village Hacks 2026</span><span class="chip">Winner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img proj-ph" style="background:linear-gradient(135deg,#0e1e3d,#1a3a6b);">
+            <span class="ph-label">BTM</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">BTM Site Scout</div>
+            <p class="proj-desc">A geospatial AI tool that analyzed 186,000 land parcels across California to surface the 20 best locations for new data centers, based on power access, zoning, and energy cost projections.</p>
+            <div class="proj-metric"><a href="https://github.com/AmulyaPingili/Energy-hackathon" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">View on GitHub</a></div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Energy Hackathon 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img proj-ph" style="background:linear-gradient(135deg,#2d6a4f,#1a3a6b);">
+            <span class="ph-label">CRN</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">Crunch: Gig Worker Finance</div>
+            <p class="proj-desc">A financial wellness dashboard built for freelancers and gig workers. Tracks income stability, flags risks, and provides an AI financial coach in 6 languages.</p>
+            <div class="proj-metric"><a href="https://github.com/YOLO200/InnovationHacks_Statefarm" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">View on GitHub</a></div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Innovation Hacks 2026</span><span class="chip">State Farm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img proj-ph" style="background:linear-gradient(135deg,#8C1D40,#2d6a4f);">
+            <span class="ph-label">WICS</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">Global Nonprofit Search Platform</div>
+            <p class="proj-desc">A multilingual search platform connecting volunteers and donors with nonprofits worldwide. Understands the meaning behind your search, not just keywords, across 89 languages.</p>
+            <div class="proj-metric"><a href="https://github.com/pradeepreddyvv/contextWindow" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">View on GitHub</a></div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">WICS x Opportunity Hacks 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img proj-ph" style="background:linear-gradient(135deg,#1a3a6b,#7a5c00);">
+            <span class="ph-label">ASK</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">ASK: AI Study Tool</div>
+            <p class="proj-desc">An AI tutor that never gives you the answer. It only asks better questions. Built to develop real understanding through guided thinking, with real-time multiplayer study battles.</p>
+            <div class="proj-metric">Kiro Spark Challenge 2026</div>
+            <div class="chip-row" style="margin-top:8px">
+              <span class="chip">Kiro Spark 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- ── SKILLS ── -->
@@ -346,27 +423,77 @@
       </div>
       <div class="skills-grid">
         <div class="sg"><span class="sg-head">Languages</span>
-          <div class="pills"><span class="pill">Python</span><span class="pill">R</span><span
-              class="pill">C++</span><span class="pill">Java</span></div>
-        </div>
-        <div class="sg"><span class="sg-head">Databases</span>
-          <div class="pills"><span class="pill">PostgreSQL</span><span class="pill">MongoDB</span><span
-              class="pill">MySQL</span><span class="pill">Redshift</span></div>
+          <div class="pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">R</span><span class="pill">TypeScript</span><span class="pill">JavaScript</span><span class="pill">C++</span><span class="pill">Java</span></div>
         </div>
         <div class="sg"><span class="sg-head">ML / AI</span>
-          <div class="pills"><span class="pill">Hugging Face</span><span class="pill">SentenceTransformers</span><span
-              class="pill">ChromaDB</span><span class="pill">Scikit-Learn</span></div>
+          <div class="pills"><span class="pill">XGBoost</span><span class="pill">LightGBM</span><span class="pill">Scikit-Learn</span><span class="pill">LLMs</span><span class="pill">RAG</span><span class="pill">Agentic AI</span><span class="pill">Text-to-SQL</span><span class="pill">Hugging Face</span><span class="pill">Optuna</span></div>
         </div>
-        <div class="sg"><span class="sg-head">Pipelines</span>
-          <div class="pills"><span class="pill">Apache Airflow</span><span class="pill">Pandas</span><span
-              class="pill">Matplotlib</span></div>
+        <div class="sg"><span class="sg-head">Data Engineering</span>
+          <div class="pills"><span class="pill">Apache Spark</span><span class="pill">PySpark</span><span class="pill">SageMaker</span><span class="pill">Redshift</span><span class="pill">Azure Data Lake</span><span class="pill">Pandas</span></div>
         </div>
-        <div class="sg"><span class="sg-head">Cloud & BI</span>
-          <div class="pills"><span class="pill">AWS S3/EC2</span><span class="pill">Power BI</span><span
-              class="pill">Tableau</span></div>
+        <div class="sg"><span class="sg-head">Databases</span>
+          <div class="pills"><span class="pill">PostgreSQL</span><span class="pill">MongoDB</span><span class="pill">MySQL</span><span class="pill">ChromaDB</span><span class="pill">Supabase</span><span class="pill">pgvector</span></div>
         </div>
-        <div class="sg"><span class="sg-head">Certifications</span>
-          <div class="pills"><span class="pill">DP-900 Azure</span><span class="pill">HackerRank</span></div>
+        <div class="sg"><span class="sg-head">Frameworks & Cloud</span>
+          <div class="pills"><span class="pill">FastAPI</span><span class="pill">React</span><span class="pill">Streamlit</span><span class="pill">Flask</span><span class="pill">Gradio</span><span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">Vercel</span></div>
+        </div>
+        <div class="sg"><span class="sg-head">Tools & BI</span>
+          <div class="pills"><span class="pill">Tableau</span><span class="pill">Power BI</span><span class="pill">Slack API</span><span class="pill">Groq API</span><span class="pill">GitHub Actions</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <section class="section" id="certs">
+      <div class="sec-header">
+        <span class="sec-num">06 / credentials</span>
+        <div class="sec-title">Certifications</div>
+        <svg class="squig" viewBox="0 0 180 9" fill="none">
+          <path d="M2 6 q18-6 36 0 q18 6 36 0 q18-6 36 0 q18 6 36 0 q18-6 36 0" stroke="#1a3a6b" stroke-width="1.7"
+            fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-name">Azure Data Fundamentals</div>
+          <div class="cert-issuer">Microsoft</div>
+          <div class="cert-expired">Expired · DP-900</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Machine Learning Foundations</div>
+          <div class="cert-issuer">NASSCOM</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Python Essentials</div>
+          <div class="cert-issuer">Cisco</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Problem Solving Basics</div>
+          <div class="cert-issuer">HackerRank</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Foundations of AI Engineering</div>
+          <div class="cert-issuer">CodePath</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Claude Code 101</div>
+          <div class="cert-issuer">Anthropic</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Introduction to Model Context Protocol</div>
+          <div class="cert-issuer">Anthropic</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Introduction to Subagents</div>
+          <div class="cert-issuer">Anthropic</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">DataFest Arizona — Mentor Certification</div>
+          <div class="cert-issuer">American Statistical Association</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">Certification of Achievement</div>
+          <div class="cert-issuer">Opportunity Hacks</div>
         </div>
       </div>
     </section>
@@ -374,25 +501,22 @@
     <!-- ── CONTACT POSTCARD ── -->
     <div class="contact-wrap" id="contact">
       <div class="sec-header" style="text-align:center">
-        <span class="sec-num">06 / connect</span>
+        <span class="sec-num">07 / connect</span>
         <div class="sec-title">Say hello.</div>
       </div>
       <div class="postcard">
         <div class="pc-left">
           <div class="pc-title">Let's build something meaningful.</div>
-          <div class="pc-sub">open to full-time & internship roles</div>
+          <div class="pc-sub">open to full-time roles</div>
           <div class="pc-links">
             <a href="mailto:saiamulyapingili@gmail.com" class="pc-link">
               <i class="fas fa-envelope"></i> saiamulyapingili@gmail.com
             </a>
-            <a href="https://linkedin.com/in/amulyapingili/" target="_blank" class="pc-link">
+            <a href="https://linkedin.com/in/amulyapingili/" target="_blank" rel="noopener noreferrer" class="pc-link">
               <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="https://github.com/amulyapingili" target="_blank" class="pc-link">
+            <a href="https://github.com/amulyapingili" target="_blank" rel="noopener noreferrer" class="pc-link">
               <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="AmulyaPingili_Resume.pdf" target="_blank" class="pc-link">
-              <i class="fas fa-file-pdf"></i> Resume
             </a>
           </div>
         </div>
@@ -404,8 +528,8 @@
           </div>
           <div class="pc-address">
             Sai Amulya Pingili<br>
-            Tempe, Arizona<br>
-            M.S. Data Science
+            United States<br>
+            M.S. Data Science, Analytics &amp; Engineering
           </div>
           <div class="pc-postmark">OPEN TO OPPORTUNITIES · 2026</div>
         </div>
