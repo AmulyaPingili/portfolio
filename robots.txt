@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amulyapingili.github.io/portfolio/sitemap.xml
